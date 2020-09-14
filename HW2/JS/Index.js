@@ -165,7 +165,7 @@ var person = {
 
 //Task 8
 
-while (confirm("Continue the loop?"))
+while (!confirm("Exit the loop?"))
 {
 
 }
