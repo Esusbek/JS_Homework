@@ -86,53 +86,53 @@ switch (month.toLowerCase()) {
 
 var body = {
     tagName: "body",
-    subTags: {
-        div: {
+    subTags: [
+        {
             tagName: "div",
-            subTags: {
-                span: {
+            subTags: [
+                {
                     tagName: "span",
                     text: "Enter a data please:"
                 },
-                br: {
+                {
                     tagName: "br"
                 },
-                input: {
+                {
                     tagName: "input",
                     attrs: {
                         type: "text",
                         id: "name"
                     }
                 },
-                input: {
+                {
                     tagName: "input",
                     attrs: {
                         type: "text",
                         id: "surname"
                     }
                 }
-            }
+            ]
         },
-        div: {
+        {
             tagName: "div",
-            subTags: {
-                button: {
+            subTags: [
+                {
                     tagName: "button",
                     attrs: {
                         id: "ok"
                     },
                     text: "OK"
                 },
-                button: {
+                {
                     tagName: "button",
                     attrs: {
                         id: "cancel"
                     },
                     text: "Cancel"
                 }
-            }
+            ]
         }
-    }
+    ]
 }
 
 //Task 7
