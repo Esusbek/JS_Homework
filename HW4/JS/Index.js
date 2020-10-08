@@ -172,7 +172,9 @@ var someTree = {
 
 function DOMCreate(el) {
     let res = document.createElement(el.tagName);
-    //res.setAttribute(...el.attrs);
+    for (prop in el.attrs) {
+        res.setAttribute(prop, el.attrs[prop]);
+    }
     if (el.text != undefined) res.innerText = el.text;
     if (el.children) {
         for (var i = 0; i < el.children.length; i++) {
